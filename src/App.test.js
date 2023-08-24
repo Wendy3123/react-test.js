@@ -9,10 +9,10 @@ test("header renders the correct text", () => {
 });
 
 describe("test for the button", () => {
-  test("button that changes color when clicked", () => {
+  test("button that changes color when clicked", async () => {
     render(<App />);
     const colorBtn = screen.getByRole("button");
-    userEvent.click(colorBtn);
+    await userEvent.click(colorBtn);
     expect(colorBtn).toHaveStyle({ backgroundColor: "blue" });
     expect(colorBtn.textContent).toBe("Change button color to green");
   });

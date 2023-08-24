@@ -15,7 +15,7 @@ function App() {
         onClick={() => setBtnColor(newBtnColor)}
         disabled={inputDisabled}
       >
-        Change to {newBtnColor}
+        Change button color to {newBtnColor}
       </button>
 
       <input
